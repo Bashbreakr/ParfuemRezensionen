@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parfüm Bewertungen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parfüm Bewertungen</h1>
+        
+        <div class="user-registration">
+            <h2>Benutzerregistrierung</h2>
+            <form id="registration-form">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit">Registrieren</button>
+            </form>
+        </div>
+        
+        <div class="perfume-reviews">
+            <h2>Rezensionen</h2>
+            <form id="review-form" style="display: none;">
+                <label for="perfume">Parfüm:</label>
+                <input type="text" id="perfume" name="perfume" required>
+                <label for="review">Rezension:</label>
+                <textarea id="review" name="review" required></textarea>
+                <button type="submit">Bewertung abgeben</button>
+            </form>
+            <div id="reviews-list"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
