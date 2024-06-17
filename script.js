@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const username = "Proiserspp";
     const repo = "ParfümRezensionen";
-    const token = "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";
+    const token = "xxx";
     const apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/reviews.json`;
 
     const registrationForm = document.getElementById('registration-form');
